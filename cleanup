@@ -1,0 +1,12 @@
+sudo killall lt-simple_switch
+for i in $(seq 0 9)
+do
+    ip link delete s$i-tin
+    ip link delete s$i-mgr
+    ip link delete s$i-eth0
+    ip link delete s$i-eth1
+    ip link delete s$i-eth2
+    ip link delete s$i-eth3
+    ip link delete s$i-eth4
+    ip link delete s$i-eth5
+done
